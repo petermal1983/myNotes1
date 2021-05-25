@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+h1, p {
+
+    margin: 20px;
+}
+
+li {
+list-style-type: none;
+margin-top: 12px;
+margin-left: 12px;
+height: 90px;
+width: 355px;
+padding-top: 45px;
+}
+
+
+ul {
+    align-items: center;
+    text-indent: 10px;
+    margin-top: 12px;
+    padding-left: 12px;
+   }
