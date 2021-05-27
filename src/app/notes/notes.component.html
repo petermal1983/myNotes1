@@ -7,21 +7,28 @@
 
         <div class="list-items">
             <ul>
-            <li routerLink="/note-1" class="list-item">Заметка 1</li>
-            <li routerLink="/note-2" class="list-item">Заметка 2</li>
-            <li routerLink="/note-3" class="list-item">Заметка 3</li>
-            <li routerLink="/note-4" class="list-item">Заметка 4</li>
-            </ul>
-            
-           
+                <li *ngFor="let number of noteNumbers; let i = index">
+                    <a routerLink="note-{{i+1}}" class="list-item">Заметка {{i+1}}</a>
+                </li>
+
+
+            </ul>  
 
         </div>
 
+        <div class="add-button"><button type="submit" (click)="addNote()" class="list-item">Добавить заметку</button></div>
+        
+
+        
     </div>
 
     <div class="note-content-container">
-        <router-outlet></router-outlet>
-    </div>
+       <router-outlet></router-outlet>
 
+
+    </div>
+    
+    
+    
 
 </div>
